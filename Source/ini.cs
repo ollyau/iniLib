@@ -40,9 +40,6 @@ namespace iniLib {
         /// </summary>
         /// <param name="path">The location of an ini file to work with</param>
         public Ini(string path) {
-            if (!File.Exists(path)) {
-                throw new ArgumentException("The ini file could not be located.");
-            }
             this.path = path;
         }
 
